@@ -1,0 +1,202 @@
+
+```sh
+toshihiroinoue@T21MacAir vue % yarn
+yarn install v1.22.17
+info No lockfile found.
+[1/4] 🔍  Resolving packages...
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 🔨  Building fresh packages...
+success Saved lockfile.
+✨  Done in 0.07s.
+toshihiroinoue@T21MacAir vue % yarn global add @vue/cli
+yarn global v1.22.17
+[1/4] 🔍  Resolving packages...
+warning @vue/cli > @vue/cli-ui > apollo-server-express > graphql-tools@4.0.8: This package has been deprecated and now it only exports makeExecutableSchema.\nAnd it will no longer receive updates.\nWe recommend you to migrate to scoped packages such as @graphql-tools/schema, @graphql-tools/utils and etc.\nCheck out https://www.graphql-tools.com to learn what package you should use instead
+warning @vue/cli > @vue/cli-ui > apollo-server-express > apollo-server-core > graphql-tools@4.0.8: This package has been deprecated and now it only exports makeExecutableSchema.\nAnd it will no longer receive updates.\nWe recommend you to migrate to scoped packages such as @graphql-tools/schema, @graphql-tools/utils and etc.\nCheck out https://www.graphql-tools.com to learn what package you should use instead
+warning @vue/cli > @vue/cli-ui > apollo-server-express > graphql-tools > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @vue/cli > @vue/cli-ui > apollo-server-express > apollo-server-core > graphql-extensions@0.15.0: The `graphql-extensions` API has been removed from Apollo Server 3. Use the plugin API instead: https://www.apollographql.com/docs/apollo-server/integrations/plugins/
+warning @vue/cli > @vue/cli-ui > apollo-server-express > apollo-server-core > apollo-cache-control@0.14.0: The functionality provided by the `apollo-cache-control` package is built in to `apollo-server-core` starting with Apollo Server 3. See https://www.apollographql.com/docs/apollo-server/migration/#cachecontrol for details.
+warning @vue/cli > @vue/cli-ui > apollo-server-express > apollo-server-core > apollo-tracing@0.15.0: The `apollo-tracing` package is no longer part of Apollo Server 3. See https://www.apollographql.com/docs/apollo-server/migration/#tracing for details
+warning @vue/cli > vue-codemod > jscodeshift > micromatch > snapdragon > source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+warning @vue/cli > vue-codemod > jscodeshift > micromatch > snapdragon > source-map-resolve > resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+warning @vue/cli > vue-codemod > jscodeshift > micromatch > snapdragon > source-map-resolve > source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+warning @vue/cli > vue-codemod > jscodeshift > micromatch > snapdragon > source-map-resolve > urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 🔨  Building fresh packages...
+success Installed "@vue/cli@5.0.1" with binaries:
+      - vue
+✨  Done in 27.26s.
+toshihiroinoue@T21MacAir vue % yarn global add @vue/cli-init
+yarn global v1.22.17
+[1/4] 🔍  Resolving packages...
+warning @vue/cli-init > vue-cli@2.9.6: This package has been deprecated in favour of @vue/cli
+warning @vue/cli-init > vue-cli > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning @vue/cli-init > vue-cli > request > har-validator@5.1.5: this library is no longer supported
+warning @vue/cli-init > vue-cli > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning @vue/cli-init > vue-cli > coffee-script@1.12.7: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
+[2/4] 🚚  Fetching packages...
+[3/4] 🔗  Linking dependencies...
+[4/4] 🔨  Building fresh packages...
+warning "@vue/cli-init@5.0.1" has no binaries
+✨  Done in 8.63s.
+toshihiroinoue@T21MacAir vue % vue --version
+@vue/cli 5.0.1
+toshihiroinoue@T21MacAir vue % vue init webpack vue-app
+
+? Project name sample
+? Project description vue study
+? Author ryohei-takasugi <63960937+ryohei-takasugi@users.noreply.github.com>
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Standard
+? Set up unit tests Yes
+? Pick a test runner jest
+? Setup e2e tests with Nightwatch? Yes
+? Should we run `npm install` for you after the project has been created? (recommended) yarn
+
+   vue-cli · Generated "vue-app".
+
+
+# Installing project dependencies ...
+# ========================
+
+yarn install v1.22.17
+info No lockfile found.
+[1/5] 🔍  Validating package.json...
+[2/5] 🔍  Resolving packages...
+warning autoprefixer > browserslist@2.11.3: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+warning babel-core > babel-register > core-js@2.6.12: core-js@<3.4 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+warning babel-core > babel-runtime > core-js@2.6.12: core-js@<3.4 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Please, upgrade your dependencies to the actual version of core-js.
+warning babel-eslint@8.2.6: babel-eslint is now @babel/eslint-parser. This package will no longer receive updates.
+warning chromedriver > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning chromedriver > request > har-validator@5.1.5: this library is no longer supported
+warning chromedriver > request > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+warning css-loader > cssnano > autoprefixer > browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+warning css-loader > cssnano > postcss-merge-rules > browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+warning css-loader > cssnano > postcss-merge-rules > caniuse-api > browserslist@1.7.7: Browserslist 2 could fail on reading Browserslist >3.0 config used in other tools.
+warning css-loader > cssnano > postcss-svgo > svgo@0.7.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+warning css-loader > cssnano > postcss-merge-rules > postcss-selector-parser > flatten@1.0.3: flatten is deprecated in favor of utility frameworks such as lodash.
+warning eslint > file-entry-cache > flat-cache > circular-json@0.3.3: CircularJSON is in maintenance only, flatted is its successor.
+warning eslint-loader@1.9.0: This loader has been deprecated. Please use eslint-webpack-plugin
+warning extract-text-webpack-plugin@3.0.2: Deprecated. Please use https://github.com/webpack-contrib/mini-css-extract-plugin
+warning html-webpack-plugin@2.30.1: out of support
+warning jest > jest-cli > jest-environment-jsdom > jsdom > request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+warning jest > jest-cli > jest-haste-map > sane@2.5.2: some dependency vulnerabilities fixed, support for node < 10 dropped, and newer ECMAScript syntax/features added
+warning jest > jest-cli > jest-environment-jsdom > jsdom > left-pad@1.3.0: use String.prototype.padStart()
+warning jest > jest-cli > jest-environment-jsdom > jsdom > request-promise-native@1.0.9: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
+warning jest > jest-cli > jest-haste-map > sane > fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+warning jest > jest-cli > jest-haste-map > sane > micromatch > snapdragon > source-map-resolve@0.5.3: See https://github.com/lydell/source-map-resolve#deprecated
+warning jest > jest-cli > jest-haste-map > sane > micromatch > snapdragon > source-map-resolve > resolve-url@0.2.1: https://github.com/lydell/resolve-url#deprecated
+warning jest > jest-cli > jest-haste-map > sane > micromatch > snapdragon > source-map-resolve > urix@0.1.0: Please see https://github.com/lydell/urix#deprecated
+warning jest > jest-cli > jest-haste-map > sane > micromatch > snapdragon > source-map-resolve > source-map-url@0.4.1: See https://github.com/lydell/source-map-url#deprecated
+warning nightwatch > proxy-agent > socks-proxy-agent > socks@1.1.10: If using 2.x branch, please upgrade to at least 2.1.6 to avoid a serious bug with socket data flow and an import issue introduced in 2.1.0
+warning nightwatch > mocha-nightwatch > mkdirp@0.5.1: Legacy versions of mkdirp are no longer supported. Please update to mkdirp 1.x. (Note that the API surface has changed to use Promises in 1.x.)
+warning nightwatch > mocha-nightwatch > json3@3.3.2: Please use the native JSON object instead of JSON 3
+warning optimize-css-assets-webpack-plugin > cssnano > cssnano-preset-default > postcss-svgo > svgo@1.3.2: This SVGO version is no longer supported. Upgrade to v2.x.x.
+warning uglifyjs-webpack-plugin > uglify-es@3.3.9: support for ECMAScript is superseded by `uglify-js` as of v3.13.0
+warning webpack > watchpack > watchpack-chokidar2 > chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+warning webpack > watchpack > watchpack-chokidar2 > chokidar > fsevents@1.2.13: fsevents 1 will break on node v14+ and could be using insecure binaries. Upgrade to fsevents 2.
+warning webpack > node-libs-browser > url > querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+warning webpack-bundle-analyzer > bfj-node4@5.3.1: Switch to the `bfj` package for fixes and new features!
+warning webpack-dev-server > chokidar@2.1.8: Chokidar 2 does not receive security updates since 2019. Upgrade to chokidar 3 with 15x fewer dependencies
+warning webpack-dev-server > sockjs > uuid@3.4.0: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+[3/5] 🚚  Fetching packages...
+[4/5] 🔗  Linking dependencies...
+[5/5] 🔨  Building fresh packages...
+success Saved lockfile.
+✨  Done in 79.96s.
+
+
+Running eslint --fix to comply with chosen preset rules...
+# ========================
+
+yarn run v1.22.17
+$ eslint --ext .js,.vue src test/unit test/e2e/specs --fix
+✨  Done in 0.86s.
+
+# Project initialization finished!
+# ========================
+
+To get started:
+
+  cd vue-app
+  npm run dev
+  
+Documentation can be found at https://vuejs-templates.github.io/webpack
+
+
+toshihiroinoue@T21MacAir vue % 
+```
+
+
+vueチュートリアル
+
+https://vuejs.org/translations/
+
+https://github.com/vuejs-translations/docs-ja
+
+pnpm
+```sh
+toshihiroinoue@T21MacAir docs-ja % curl -fsSL https://get.pnpm.io/install.sh | sh -
+==> Extracting pnpm binaries 6.31.0
+Copying pnpm CLI from /private/var/folders/qn/_9rq6wb53x9_8pdy58q6v1mh0000gn/T/tmp.2VefCU0c/pnpm to /Users/toshihiroinoue/Library/pnpm/pnpm
+Updated /Users/toshihiroinoue/.zshrc
+
+Setup complete. Open a new terminal to start using pnpm.
+toshihiroinoue@T21MacAir docs-ja % 
+```
+
+ターミナル再起動
+
+```
+toshihiroinoue@T21MacAir docs-ja % pnpm i      
+ WARN  Unsupported engine: wanted: {"node":">=14.19.0"} (current: {"node":"v14.17.0","pnpm":"6.31.0"})
+Lockfile is up-to-date, resolution step is skipped
+Packages: +431
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /Users/toshihiroinoue/.pnpm-store/v3
+  Virtual store is at:             node_modules/.pnpm
+Downloading registry.npmjs.org/kuromoji/0.1.2: 21.8 MB/21.8 MB, done
+node_modules/.pnpm/@nexhome+yorkie@2.0.8/node_modules/@nexhome/yorkie: Running install script, done in 78ms
+Progress: resolved 431, reused 0, downloaded 430, added 431, done
+node_modules/.pnpm/vue-demi@0.12.1_vue@3.2.31/node_modules/vue-demi: Running postinstall script, done in 91ms
+node_modules/.pnpm/esbuild@0.14.21/node_modules/esbuild: Running postinstall script, done in 1.5s
+
+dependencies:
++ @vue/repl 1.0.0
++ @vue/theme 1.0.1
++ dynamics.js 1.1.5
++ gsap 3.9.0
++ vitepress 0.22.2
++ vue 3.2.31
+
+devDependencies:
++ @nexhome/yorkie 2.0.8
++ @types/markdown-it 12.2.3
++ @types/node 16.10.3
++ lint-staged 12.3.2
++ textlint 12.1.0
++ textlint-filter-rule-allowlist 4.0.0
++ textlint-filter-rule-comments 1.2.2
++ textlint-rule-preset-vuejs-jp 1.3.0
+toshihiroinoue@T21MacAir docs-ja % pnpm run dev
+ WARN  Unsupported engine: wanted: {"node":">=14.19.0"} (current: {"node":"v14.17.0","pnpm":"6.31.0"})
+
+> @ dev /Users/toshihiroinoue/projects/vue/docs-ja
+> vitepress
+
+vitepress v0.22.2
+Pre-bundling dependencies:
+  gsap
+  dynamics.js
+  vue
+(this will be run only when your dependencies or config have changed)
+
+  > Local:    http://localhost:3000/
+  > Network:  http://192.168.10.102:3000/
+
+```
