@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import './App.css';
 
 function App() {
+  const MAX_INPUT_SIZE = 10000; // 10KB
   const [inputJSON, setInputJSON] = useState("") // 入力されたJSON文字列
   const [outputJSON, setOutputJSON] = useState("") // 整形結果
   const [errorMessage, setErrorMessage] = useState("") // エラーメッセージ
@@ -41,6 +42,10 @@ function App() {
   const handleSort = () => {
     try {
       clearOutput()
+      if (inputJSON.length > MAX_INPUT_SIZE) {
+        setErrorMessage(`入力サイズが${MAX_INPUT_SIZE}バイトを超えています。`)
+        return
+      }
       const parsed: unknown = JSON.parse(inputJSON) // 何でもいけるようにするのでスキーマなし
       const sorted = sortJSON(parsed)
       setOutputJSON(JSON.stringify(sorted, null, 2))
@@ -52,6 +57,10 @@ function App() {
   const handleMinify = () => {
     try {
       clearOutput()
+      if (inputJSON.length > MAX_INPUT_SIZE) {
+        setErrorMessage(`入力サイズが${MAX_INPUT_SIZE}バイトを超えています。`)
+        return
+      }
       const parsed: unknown = JSON.parse(inputJSON) // 何でもいけるようにするのでスキーマなし
       setOutputJSON(JSON.stringify(parsed))
     } catch (error: unknown) {
@@ -62,6 +71,10 @@ function App() {
   const handleExpand = () => {
     try {
       clearOutput()
+      if (inputJSON.length > MAX_INPUT_SIZE) {
+        setErrorMessage(`入力サイズが${MAX_INPUT_SIZE}バイトを超えています。`)
+        return
+      }
       const parsed: unknown = JSON.parse(inputJSON) // 何でもいけるようにするのでスキーマなし
       setOutputJSON(JSON.stringify(parsed, null, 2))
     } catch (error: unknown) {
@@ -71,6 +84,14 @@ function App() {
 
   const handleCopy = () => {
     if (outputJSON) {
+      if (window.location.protocol !== 'https:') {
+        alert('この機能はHTTPS環境でのみ動作します。');
+        return;
+      }
+      if (!navigator.clipboard) {
+        alert('クリップボード操作がサポートされていません。');
+        return;
+      }
       const promise = navigator.clipboard.writeText(outputJSON)
       promise.then(() => {
         // alert('結果をコピーしました！')
