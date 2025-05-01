@@ -1,0 +1,19 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "sample",
+  "main": "index.ts",
+  "scripts": {
+    "test": "ts-node index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "log4js": "^6.9.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.8"
+  }
+}

@@ -1,7 +1,10 @@
-FROM node:lts-alpine
+FROM node:23.11-bookworm
 
 # 静的コンテンツを配信するシンプルな http サーバをインストールする
-RUN npm install -g http-server
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
 # カレントワーキングディレクトリとして 'app' フォルダを指定する
 WORKDIR /app

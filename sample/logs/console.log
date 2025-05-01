@@ -1,0 +1,2 @@
+[2024-05-05T06:50:59.263Z] DEBUG /app/sample/index.ts Server {"url":"/","message":"Hello World!","method":"GET"}
+[2024-05-05T06:50:59.359Z] DEBUG /app/sample/index.ts Server {"url":"/FAVICON.ICO","message":"Hello World!","method":"GET"}
