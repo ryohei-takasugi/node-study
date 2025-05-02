@@ -8,9 +8,16 @@ services:
       dockerfile: Dockerfile
     tty: true
     stdin_open: true
-    ports:
-      - 3001:3001
     volumes:
       - type: bind
         source: "./"
         target: "/app"
+  nginx:
+    image: nginx:1.19.6
+    ports:
+      - "8080:80"
+    depends_on:
+      - app
+    volumes:
+      - ./containers/nginx/etc/nginx/conf.d:/etc/nginx/conf.d
+      - ./json-tool-web/dist:/var/www/html
